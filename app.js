@@ -1,13 +1,13 @@
 $(document).ready(function(){ 
   
-  $('#search-form').submit(function(event){
+  $('#search-term').submit(function(event){
     event.preventDefault();
     var searchTerm = $('#query').val();
     console.log(searchTerm);
     $.getJSON("https://www.googleapis.com/youtube/v3/search",
 			{
 				"part": "snippet",
-				"key": "AIzaSyD6xC8ooIbnbmuf8iQuVNe2XES-Hio41Q0",
+				"key": "AIzaSyCS-MPGT_gh2_JJ3UjEGbPAJebEUmIwKv0",
 				"q": searchTerm 
 			},
 		function(data){
