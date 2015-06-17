@@ -1,6 +1,6 @@
 $(document).ready(function() { 
   
-  $('#search-term').submit(function(event){
+  $('#search-form').submit(function(event){
     event.preventDefault();
     var searchTerm = $('#query').val();
     console.log(searchTerm);
