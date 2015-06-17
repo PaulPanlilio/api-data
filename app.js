@@ -1,4 +1,4 @@
-$(document).ready(function() { 
+$(document).ready(function(){ 
   
   $('#search-form').submit(function(event){
     event.preventDefault();
@@ -7,7 +7,7 @@ $(document).ready(function() {
     $.getJSON("https://www.googleapis.com/youtube/v3/search",
 			{
 				"part": "snippet",
-				"key": "AIzaSyCS-MPGT_gh2_JJ3UjEGbPAJebEUmIwKv0",
+				"key": "AIzaSyD6xC8ooIbnbmuf8iQuVNe2XES-Hio41Q0",
 				"q": searchTerm 
 			},
 		function(data){
@@ -37,4 +37,5 @@ function showResults(videos){
   }
   
   });
+  
   
